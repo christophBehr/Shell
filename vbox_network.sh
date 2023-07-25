@@ -1,6 +1,6 @@
 #!bin/bash
 
-#Shellscript for creating a Virtualpox internal network, because I can´t remeber the command...
+#Shellscript for creating a Virtualpox internal network, because I can´t remeber the command.
 
 #declaration of variable
 NETWORK_NAME=$1
