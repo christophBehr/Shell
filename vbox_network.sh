@@ -1,6 +1,6 @@
 #!bin/bash
 
-#Shellscript for creating a Virtualpox internal network, because I can´t remeber the command.
+#Shellscript for creating a Virtualbox internal network, because I can´t remeber the command.
 
 #Enter parameters for Vbox Network
 echo ¨Enter Network Name¨
@@ -17,7 +17,7 @@ read NETMASK
 #Check if network parameters are correct
 read CORRECT
 
-# If parameters isnerted correctly create network else exit to shell
+# If parameters correct create network else exit
 if[ $CORRECT == ¨y¨ ]; then
 vboxmanage dhcpserver add --network=${NETWORK_NAME} --server-ip=${SERVER_IP} --lower-ip=${LOWER_IP} --upper-ip=${UPPER_IP} --netmask=${NETMASK} --enable
 
